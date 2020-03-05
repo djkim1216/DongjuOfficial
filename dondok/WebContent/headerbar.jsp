@@ -18,7 +18,7 @@
 <script type="text/javascript">
 
 //회원정보 수정 페이지 연결을 위해 추가 [조민지]
-function fnMemberModify(){
+function  fnMemberModify(){
 	var url = "memberModify"; //로그인 페이지 샘플 (보통은 /서블릿 액션명 을 넣는다)
 	var popupName = "memberModify"; //popup에 고유한 이름을 부여한다. 이름이 같은 팝업이 열릴때는 브라우저가 인식해서 중복팝업이 발생 시키지 않게 한다.
 	var popupSetting = "width=500, height=700, menubar=no, status=no, toolbar=no"; //팝업이 열리는 시점에 세팅을 하는 곳
@@ -232,7 +232,7 @@ function fnMemberModify(){
 			return str;
 		}
 		
-		function onClickAlarmListItem(item, al_no, al_cate, al_rno){		//클릭된 알람리스트 삭제 및 페이지이동
+		function onClickAlarmListItem(item, al_no, al_cate, al_rno){	//클릭된 알람리스트 삭제 및 페이지이동
 			$(item).closest("li").remove();		//item에서 제일 가까운 li 삭제
 			$.ajax({
 				type : 'get',
